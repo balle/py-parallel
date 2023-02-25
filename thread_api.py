@@ -14,13 +14,12 @@ def get(url):
     return result
 
 def main():
-    base_url = 'https://showcase.atczh.ch/api/v1/'
+    base_url = 'https://somedomain.tld/api/v1/'
     urls = [
-        base_url + 'employees/',
-        base_url + 'sectors/',
-        base_url + 'customers/',
-        base_url + 'tools/',
-        base_url + 'stories/'
+        base_url + 'bla/',
+        base_url + 'blubb/',
+        base_url + 'foo/',
+        base_url + 'bar/'
     ]
     pool = ThreadPoolExecutor(max_workers=len(urls))
 
